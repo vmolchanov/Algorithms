@@ -4,12 +4,15 @@ class Program
 {
     static void Main(string[] args)
     {
-        int kaleidoscopeSize = getKaleidoscopeSizeFromInputStream("Введите размер калейдоскопа (половина стороны)");
+        int kaleidoscopeSize = GetKaleidoscopeSizeFromInputStream("Введите размер калейдоскопа (половина стороны)");
         int[,] kaleidoscope = MakeKaleidoscope(kaleidoscopeSize);
         PrintKaleidoscope(kaleidoscope);
     }
 
-    static int getKaleidoscopeSizeFromInputStream(String message)
+    /**
+     * Запрашивает у пользователя размер половины стороны калейдоскопа
+     */
+    static int GetKaleidoscopeSizeFromInputStream(String message)
     {
         const int MIN_VALUE = 3;
         const int MAX_VALUE = 20;
