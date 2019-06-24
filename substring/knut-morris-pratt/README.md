@@ -13,8 +13,10 @@
 
 Подобно наивному алгоритму сравниваем посимвольно подстроку строки str и substr, но, при несовпадении, сдвигаемся не на один символ, а на:
 
-![](https://latex.codecogs.com/svg.latex?N^{'}&space;=&space;N&space;&plus;&space;(q&space;-&space;p(q)))
+![Формула получения значения сдвига](https://latex.codecogs.com/svg.latex?N^{'}&space;=&space;N&space;&plus;&space;(q&space;-&space;p(q)))
 
 N - текущий индекс;
+
 q - количество сравнений;
+
 p(q) - значение префикс-функции для несовпавшего символа.
